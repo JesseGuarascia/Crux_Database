@@ -11,11 +11,21 @@
 
 <body>
 	<div id="field">
-		<form>
-			<label for="option">Location<br></label>
-			<select id="option">
-				<option value="add-new">Add new location</option>
-			</select>	
+		<label for="location">Location<br></label>
+		<select id="location">
+			<option disabled selected value>-- select an option --</option>
+			<option value="add-new">Create new</option>
+		</select>	
+		<hr>
+		<form id="info-form">
+			<fieldset id="info-form-set" disabled="disabled">
+				<label for="location-name">Name:<br></label>
+				<input id="location-name" type="text"></input><br><br>
+				<label for="location-id-suffix">ID Suffix:<br></label>
+				<input id="location-id-suffix" type="text"></input><br><br>
+				<button type="reset" style="float: right; margin-left: 10px;">Cancel</button>
+				<button type="button" style="float: right">Save</button>
+			</fieldset>
 		</form>
 	</div>
 </body>
