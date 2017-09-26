@@ -1,0 +1,17 @@
+/* CSS Document */
+
+body, html {
+	height: 100%;
+	position: relative;
+}
+
+#field {
+	background-color: #F8F8F8;
+	
+	padding: 10px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
