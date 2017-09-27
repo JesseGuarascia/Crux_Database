@@ -115,6 +115,8 @@ updateLocationList = function() {
 		async: false,
 		url: "database.php?option=get_locations",
 		success: function (text){
+			if (text == "0 results") return;
+
 			data = JSON.parse(text);
 
 			data.forEach(function(element) {
