@@ -115,7 +115,10 @@ updateLocationList = function() {
 		async: false,
 		url: "database.php?option=get_locations",
 		success: function (text){
-			if (text == "0 results") return;
+			if (text == "0 results") {
+				$("#location").append("<option value='add-new'>-- create new --</option>");
+				return;
+			}
 
 			data = JSON.parse(text);
 
